@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+body {
+   font-family: 'Poppins', sans-serif;
+  /*background-color: #34495e;*/
+  background-color: #f2f2f2;
+  color: #fff;
+}
+
+.header {
+  height: 63px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 9%;
+  background: #224bcf;
+}
+
+.header .logo {
+  font-size: 16px;
+  font-weight: bolder;
+  color: #fff;
+}
+.header .logo i {
+  padding-right: 15px;
+}
+
+.heading {
+  background: url(../images/heading-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.heading h3 {
+  font-size: 3.5rem;
+  color: #302851;
+}
+
+.heading p {
+  font-size: 1.6rem;
+  color: #666;
+  padding-top: .5rem;
+}
+
+.heading p a {
+  padding-right: .5rem;
+  color: #fa1d86;
+}
+
+.heading p a:hover {
+  color: #224bcf;
+}
+
+
+.radio_wrap {
+  margin: 0px 40px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.radio_tabs {
+  color: black;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 3rem auto 2rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+.content {
+      height: 80px;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      position: relative;
+      text-decoration: none;
+      color: black  ;
+}
+
+.content:active {
+  background-color: #DDDDDD;
+}
+.content h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px 0px 0px 10px;
+}
+
+.content p {
+  font-size: 13px;
+  padding: 6px 0px 0px 10px;
+}
+
+.content i {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  color:  #224bcf;
+}
+
+.disableDiv {
+  pointer-events: none;
+  opacity: 0.4  ;
+}
+
+.cert {
+  text-decoration: none;
+  color: #696969;
+}
+
+.cert h2 {
+  padding: 20px 0px 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.cert img {
+    height: 8rem;
+    margin-left: 60px;
+}
+
+
+
+@media (max-width: 1200px) {
+  /*html {
+    font-size: 55%;
+  }*/
+  section {
+    padding: 2rem 1rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header {
+    padding: 2rem;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #224bcf;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar ul li {
+    width: 100%;
+  }
+  .header .navbar ul li ul {
+    width: 100%;
+    position: relative;
+  }
+  .about .content h3 {
+    font-size: 3rem;
+  }
+.main-video video {
+    width: 95%;
+    border-width: .2rem;
+  }
+}
+
+/*@media (max-width: 450px) {
+  section {
+    font-size: 50%;
+  }
+}*/
+
+/*@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .accordion {
+    font-size: 100%;
+  }
+}*/

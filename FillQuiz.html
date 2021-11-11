@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fill in the blanks</title>
+	<link rel="stylesheet" type="text/css" href="css/FillQuiz.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	<header class="header">
+    	<a href="accordion.html" class="logo"> <i class="fas fa-chevron-left"></i> 1. 2 lesson</a>
+	</header>
+
+	<section class="heading">
+    	<p>2/2</p>
+	</section>
+
+	<div class="head">
+		<h2>It is the first electromechanical computer</h2>
+	</div>
+
+	<div class="wrapper">
+         <div class="input-data">
+            <input id="guess-input" type="text" name="mark-1" required>
+            <div class="underline"></div>
+            <!-- <label>Hint: It starts with letter M</label> -->
+         </div>
+         <p><strong>Hint:</strong> It starts with letter M and ends a number</p>
+      </div>
+
+		<!-- <label class="custom-field two">
+		  <input id="guess-input" type="text" name="mark-1" placeholder="&nbsp;"/>
+		  <span class="placeholder">Starts with M</span>
+		</label> -->
+
+	 <footer>
+			<button class="modal__button" id="open-modal">
+               Check
+        </button>
+	 </footer>
+
+	 <div class="modal__container" id="modal-container">
+                <div class="modal__content">
+                    <div class="modal__close close-modal" title="Close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <img src="images/star-trophy.png" alt="" class="modal__img">
+
+                    <h1 class="modal__title">Good Job! 👏</h1>
+                   <!--  <p class="modal__description">Click the button to close</p> -->
+
+                   <a href="completed2.html"><button class="modal__button modal__button-width">
+                        Next
+                    </button></a>
+
+                   <!--  <a href="1.3.1.html"><button class="modal__button-link close-modal">
+                        Next
+                    </button></a> -->
+                </div>
+            </div>
+
+             <div class="modal-wrong" id="modal-wrong">
+                <div class="modal-content">
+                    <div class="modal-close close-modal" title="Close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <img src="images/wrong1.png" alt="" class="modal-img">
+
+                    <h1 class="modal-title">Wrong!</h1>
+                    <p class="modal-description">Try Again. I know you can do it!</p>
+
+                  <!--  <a href="1.3.1.html"><button class="modal__button modal__button-width">
+                        Next
+                    </button></a> -->
+
+                   <!--  <a href="1.3.1.html"><button class="modal__button-link close-modal">
+                        Next
+                    </button></a> -->
+                </div>
+            </div>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/FillQuiz.js"defer></script>	
+</body>
+</html>

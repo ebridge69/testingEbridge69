@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			background: #131f33;
+		}
+		.timeline-area {
+			margin: 90px auto;
+			width: 360px;
+			border-left: 2px solid #ccc;
+			padding: 0 20px 0 30px;
+		}
+		div {
+			background-color: #fff;
+			padding: 10px 25px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			line-height: 1.7;
+			position: relative;
+			height: 110px;
+			margin-bottom: 20px;
+		}
+		div:before {
+			content: '';
+			display: block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: #000;
+			border: 3px solid #ddd;
+			position: absolute;
+			top: 10px;
+			left: -40px;
+		}
+		div:after {
+			content: '';
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-color: transparent #ddd transparent transparent;
+			left: -17px;
+			top: 10px;
+		}
+		div h2 {
+			margin: 0;
+			text-transform: uppercase;
+			font-family: merienda;
+		}
+		div h3 {
+			margin: 0;
+			font-family: poppins;
+		}
+		div h4 {
+			margin: 0;
+			font-family: poppins;
+		}
+	</style>
+</head>
+<body>
+	<section class="timeline-area">
+		<div>
+			<h2>hey</h2>
+			<h3>sup</h3>
+			<h4>hahah</h4>
+		</div>
+		<div>
+			<h2>yare yare</h2>
+			<h3>sugoi</h3>
+			<h4>nani</h4>
+		</div>
+		<div>
+			<h2>susumi</h2>
+			<h3>sasageyo</h3>
+			<h4>shinsu sasageyo</h4>
+		</div>
+	</section>
+	
+</body>
+</html>
